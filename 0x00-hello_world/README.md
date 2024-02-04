@@ -130,8 +130,8 @@ Which of the following are both valid comment syntaxes in ANSI C, and Betty-comp
       &ensp;* Comment
       &ensp;*/
       </code></pre>
-- [ ] /* Comment /* nested */ */`
-- [ ] # Comment`
+- [ ] <pre><code>/* Comment /* nested */ */</pre></code>
+- [ ] <pre><code># Comment</pre></code>
 - [ ] <pre><code>/*
       Comment
       */
