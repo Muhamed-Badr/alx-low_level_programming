@@ -78,7 +78,7 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 - A `README.md` file, at the root of the folder of this project, containing a description of the project
 - There should be no errors and no warnings during compilation
 - You are not allowed to use `system`
-- Your code should use the Betty style. It will be checked using `betty-style.pl` and `betty-doc.pl`
+- Your code should use the Betty style. It will be checked using [betty-style.pl](https://github.com/alx-tools/Betty/blob/master/betty-style.pl) and [betty-doc.pl](https://github.com/alx-tools/Betty/blob/master/betty-doc.pl)
 ### Shell Scripts
 - Allowed editors: `vi`, `vim`, `emacs`
 - All your scripts will be tested on Ubuntu 20.04 LTS
@@ -90,8 +90,8 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 ### Betty linter
 To run the Betty linter just with command `betty <filename>`:
 
-- Go to the `Betty` repository
-- Clone the `repo` to your local machine
+- Go to the [Betty](https://github.com/alx-tools/Betty) repository
+- Clone the [repo](https://github.com/alx-tools/Betty) to your local machine
 - `cd` into the Betty directory
 - Install the linter with `sudo ./install.sh`
 - `emacs` or `vi` a new file called `betty`, and copy the script below:
