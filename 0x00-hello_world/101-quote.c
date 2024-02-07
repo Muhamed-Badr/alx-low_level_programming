@@ -1,4 +1,9 @@
-#include <stdio.h>
+/*
+ * lib <unistd.h> - stands for "Unix Standard"
+ * it's a standard C library header and it's more low-level that provides
+ * access to various system calls and POSIX operating system API functions.
+ */
+#include <unistd.h>
 
 /**
  * main - Entry point
