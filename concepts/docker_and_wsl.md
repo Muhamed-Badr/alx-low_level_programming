@@ -48,27 +48,29 @@ First, head to the guide for your particular operating system. This will give yo
 
 #### 1. Docker Installation on Windows
 **it's a video time click on it 👇**
+
 [![Docker Installation on Windows](https://img.youtube.com/vi/rATNU0Fr8zs/0.jpg)](https://www.youtube.com/watch?v=rATNU0Fr8zs)
 
 **Key steps:**
-    1. Download & install docker
-    2. Download & install WSL
-    3. Enable virtualization
-    4. Integrate WSL Ubuntu 20.04 with docker
-    5. Run docker
+1. Download & install docker
+2. Download & install WSL
+3. Enable virtualization
+4. Integrate WSL Ubuntu 20.04 with docker
+5. Run docker
 
 #### 2. Docker Installation on macOS
 **it's a video time click on it 👇**
+
 [![Docker Installation on macOS](https://img.youtube.com/vi/qX7nyMijOIo/0.jpg)](https://www.youtube.com/watch?v=qX7nyMijOIo)
 
 **Key steps:**
-    1. Go to the Docker website: Click [here](https://www.docker.com/products/docker-desktop)
-        [!Docker website](images/mac1.png)
-    2. Click the “**Download for Mac**” button to download the latest version of Docker Desktop for Mac.
-    3. Once the download is complete, double-click the Docker.dmg file to open the installer.
-    4. Drag the Docker icon to the Applications folder to install Docker Desktop.
-        [!drag and drop](images/mac2.png)
-    5. Open Docker Desktop from the Applications folder.
+1. Go to the Docker website: Click [here](https://www.docker.com/products/docker-desktop)
+   [!Docker website](images/mac1.png)
+2. Click the “**Download for Mac**” button to download the latest version of Docker Desktop for Mac.
+3. Once the download is complete, double-click the Docker.dmg file to open the installer.
+4. Drag the Docker icon to the Applications folder to install Docker Desktop.
+   [!drag and drop](images/mac2.png)
+5. Open Docker Desktop from the Applications folder.
 
 ### Understanding important concepts about Docker
 - **Docker images:** A Docker image is a lightweight, standalone, executable package of software that includes everything needed to run an application: code, runtime, system tools, system libraries, and settings.
@@ -121,19 +123,21 @@ WSL is a popular choice for developers who need to use Linux tools and applicati
 
 ### Setting up WSL in Windows OS
 **it's a video time click on it 👇**
+
 [![Setting up WSL in Windows OS](https://img.youtube.com/vi/J24j1Di-Rhc/0.jpg)](https://www.youtube.com/watch?v=J24j1Di-Rhc)
+
 [Microsoft installation tutorial](https://learn.microsoft.com/en-us/windows/wsl/install-manual)
 
 **Key steps:**
-    1. Enable WSL. Open PowerShell as an administrator and run the following command:
-	[!dos1](images/dos1.png)
-    2. Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
-        [!dos2](images/dos2.png)
-    3. Install a Linux distribution. Open the **Microsoft Store** and search for “**Linux**”. Select the Linux distribution that you want to install and click the “**Get**” button. Once the distribution is installed, click the “**Launch**” button to start it.
-        [!dos3](images/dos3.png)
-    4. Create a user account for the Linux distribution. When you start the Linux distribution for the first time, you will be prompted to create a user account. Enter a username and password for your account.
-        [!dos4](images/dos4.png)
-    5. Start using WSL! Once you have created a user account, you can start using WSL to run Linux commands and applications. To do this, open a PowerShell or Command Prompt window and type wsl. This will start a new Linux terminal session.
+1. Enable WSL. Open PowerShell as an administrator and run the following command:
+   [!dos1](images/dos1.png)
+2. Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+   [!dos2](images/dos2.png)
+3. Install a Linux distribution. Open the **Microsoft Store** and search for “**Linux**”. Select the Linux distribution that you want to install and click the “**Get**” button. Once the distribution is installed, click the “**Launch**” button to start it.
+   [!dos3](images/dos3.png)
+4. Create a user account for the Linux distribution. When you start the Linux distribution for the first time, you will be prompted to create a user account. Enter a username and password for your account.
+   [!dos4](images/dos4.png)
+5. Start using WSL! Once you have created a user account, you can start using WSL to run Linux commands and applications. To do this, open a PowerShell or Command Prompt window and type wsl. This will start a new Linux terminal session.
 
 ### Tips for using WSL
 - You can install multiple Linux distributions on Windows. To do this, simply repeat the installation process for each distribution.
@@ -143,8 +147,11 @@ WSL is a popular choice for developers who need to use Linux tools and applicati
 
 ## Extra Resources
 [Sandbox fix and options](https://www.youtube.com/watch?v=AEoaecrqvyA)
+
 [Why Do So Many Software Engineers Use Linux?](https://www.youtube.com/watch?v=otDOHt_Jges)
+
 [Learn Docker to the next level](https://www.simplilearn.com/tutorials/docker-tutorial/getting-started-with-docker)
+
 [Docker tutorial doc](https://docker-curriculum.com/)
 
 
