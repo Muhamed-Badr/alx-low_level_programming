@@ -10,39 +10,29 @@
  */
 int main(void)
 {
-	short int n1 = 0, n2 = 0, n3 = 0, n4 = 0;
+	short int f_digit = 0, s_digit = 0;
 
-	while  (n1 < 10)
+	while  (f_digit < 100)
 	{
-		while (n2 < 10)
+		s_digit = f_digit;
+		while (s_digit < 100)
 		{
-			while (n3 < 10)
+			if (s_digit > f_digit)
 			{
-				while (n4 < 10)
+				putchar((f_digit / 10) + '0');
+				putchar((f_digit % 10) + '0');
+				putchar (' ');
+				putchar((s_digit / 10) + '0');
+				putchar((s_digit % 10) + '0');
+				if (f_digit != 98)
 				{
-					if ((n3 * 10) + n4 > (n1 * 10) + n2)
-					{
-						putchar(n1 + '0');
-						putchar(n2 + '0');
-						putchar (' ');
-						putchar(n3 + '0');
-						putchar(n4 + '0');
-						if ((n1 * 1000) + (n2 * 100) + (n3 * 10) + n4 != 9899)
-						{
-							putchar(',');
-							putchar(' ');
-						}
-					}
-					n4++;
+					putchar(',');
+					putchar(' ');
 				}
-				n4 = 0;
-				n3++;
 			}
-			n3 = 0;
-			n2++;
+			s_digit++;
 		}
-		n2 = 0;
-		n1++;
+		f_digit++;
 	}
 
 	putchar('\n');

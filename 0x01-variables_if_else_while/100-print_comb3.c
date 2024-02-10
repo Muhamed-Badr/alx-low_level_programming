@@ -13,7 +13,7 @@ int main(void)
 
 	while  (n1 < 10)
 	{
-		while(n2 < 10)
+		while (n2 < 10)
 		{
 			if (n2 > n1)
 			{
