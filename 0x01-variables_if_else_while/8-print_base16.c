@@ -14,7 +14,7 @@ int main(void)
 	while  (c <= '9' || c <= 'f')
 	{
 		putchar(c++);
-		c - 48 == 10? c = 'a' : c;
+		c - 48 == 10 ? c = 'a' : c;
 	}
 	putchar('\n');
 
