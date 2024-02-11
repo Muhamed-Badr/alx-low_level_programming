@@ -128,7 +128,7 @@ WSL is a popular choice for developers who need to use Linux tools and applicati
 
 [![Setting up WSL in Windows OS](https://img.youtube.com/vi/J24j1Di-Rhc/0.jpg)](https://www.youtube.com/watch?v=J24j1Di-Rhc)
 
-[Microsoft installation tutorial](https://learn.microsoft.com/en-us/windows/wsl/install-manual)
+![Microsoft installation tutorial](https://learn.microsoft.com/en-us/windows/wsl/install-manual)
 
 **Key steps:**
 1. Enable WSL. Open PowerShell as an administrator and run the following command:
