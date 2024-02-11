@@ -271,7 +271,7 @@ julien@ubuntu:~/0x01$ ./0-positive_or_negative
 0 is zero
 julien@ubuntu:~/0x01$ 
 ```
-**Repo:**
+- **Repo:**
     - **GitHub repository:** `alx-low_level_programming`
     - **Directory:** `0x01-variables_if_else_while`
     - **File:** `0-positive_or_negative.c`
