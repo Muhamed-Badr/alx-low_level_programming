@@ -66,12 +66,12 @@ First, head to the guide for your particular operating system. This will give yo
 **Key steps:**
 1. Go to the Docker website: Click [here](https://www.docker.com/products/docker-desktop)
 
-   [!Docker website](https://github.com/Muhamed-Badr/alx-low_level_programming/edit/master/concepts/images/mac1.png)
+   [!Docker website](../images/mac1.png)
 2. Click the “**Download for Mac**” button to download the latest version of Docker Desktop for Mac.
 3. Once the download is complete, double-click the Docker.dmg file to open the installer.
 4. Drag the Docker icon to the Applications folder to install Docker Desktop.
 
-   [!drag and drop](images/mac2.png)
+   [!drag and drop](../images/mac2.png)
 6. Open Docker Desktop from the Applications folder.
 
 ### Understanding important concepts about Docker
@@ -133,16 +133,16 @@ WSL is a popular choice for developers who need to use Linux tools and applicati
 **Key steps:**
 1. Enable WSL. Open PowerShell as an administrator and run the following command:
 
-   [!dos1](images/dos1.png)
+   [!dos1](../images/dos1.png)
 3. Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
 
-   [!dos2](images/dos2.png)
+   [!dos2](../images/dos2.png)
 5. Install a Linux distribution. Open the **Microsoft Store** and search for “**Linux**”. Select the Linux distribution that you want to install and click the “**Get**” button. Once the distribution is installed, click the “**Launch**” button to start it.
 
-   [!dos3](images/dos3.png)
+   [!dos3](../images/dos3.png)
 7. Create a user account for the Linux distribution. When you start the Linux distribution for the first time, you will be prompted to create a user account. Enter a username and password for your account.
 
-   [!dos4](images/dos4.png)
+   [!dos4](../images/dos4.png)
 9. Start using WSL! Once you have created a user account, you can start using WSL to run Linux commands and applications. To do this, open a PowerShell or Command Prompt window and type wsl. This will start a new Linux terminal session.
 
 ### Tips for using WSL
