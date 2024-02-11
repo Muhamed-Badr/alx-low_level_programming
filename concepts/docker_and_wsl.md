@@ -66,7 +66,7 @@ First, head to the guide for your particular operating system. This will give yo
 **Key steps:**
 1. Go to the Docker website: Click [here](https://www.docker.com/products/docker-desktop)
 
-   <img src="images/mac1.png" alt="Docker website" width="400" height="300">
+   <img src="images/mac1.png" alt="Docker website" width="50%" height="50%">
 3. Click the “**Download for Mac**” button to download the latest version of Docker Desktop for Mac.
 4. Once the download is complete, double-click the Docker.dmg file to open the installer.
 5. Drag the Docker icon to the Applications folder to install Docker Desktop.
