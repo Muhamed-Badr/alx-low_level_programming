@@ -27,7 +27,7 @@
  * d = a1 + b1 = 9 + 2 = 11
  * F(a + b) = a + b = 935 + 240 = "d""c" = "11""75" = 1175
  * ======
- * But this have a problem, what if we want to add (7175 + 6175)!!!:)
+ * But this have a problem, what if we want to add (7175 + 6175)!!!:(
  * lets solve this problem by use mathematic equation "d + (c / 100)""c % 100"
  * ======
  ***Example.2:
