@@ -1,4 +1,4 @@
-#include "main.h"
+#include "../main.h"
 
 /**
  * positive_or_negative - test if number stored in the variable 'n' is
