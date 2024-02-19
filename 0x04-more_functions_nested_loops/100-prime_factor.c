@@ -32,7 +32,7 @@ unsigned long int largest_prime_factor(unsigned long int num)
 
 	for (i = 2; num != 1; i++)
 	{
-		if(isprime(i))
+		if (isprime(i))
 			while (!(num % i))
 				num /= i;
 	}
