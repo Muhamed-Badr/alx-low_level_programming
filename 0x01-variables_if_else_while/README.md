@@ -84,12 +84,7 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 - You are not allowed to use `system`
 - Your code should use the `Betty` style. It will be checked using [betty-style.pl](https://github.com/alx-tools/Betty/blob/master/betty-style.pl) and [betty-doc.pl](https://github.com/alx-tools/Betty/blob/master/betty-doc.pl)
 
-<details open>
-<summary>
-   
 ## Quiz questions
-</summary>
-
 ### Question #0
 Which of the following are valid `for` statements in ANSI C and Betty-compliant? (Considering `a` and `b` two variables of type `int`)
 
@@ -241,8 +236,6 @@ What is the size of the `unsigned int` data type?
 - [ ] 1 byte
 - [ ] 2 bytes
 - [x] 4 bytes
-
-</details>
 
 ## Tasks
 ### 0. Positive anything is better than negative nothing <sub>([0-positive_or_negative.c ](0-positive_or_negative.c ))</sub>
