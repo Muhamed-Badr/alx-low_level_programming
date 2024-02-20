@@ -4,6 +4,7 @@ Table of Contents
 =================
 * [Welcome To 0x00-hello_world](#welcome-to-0x00-hello_world)
 * [Table of Contents](#table-of-contents)
+* [Concepts](#concepts)
 * [Resources](#resources)
     * [Read or watch](#read-or-watch)
     * [man or help](#man-or-help)
@@ -32,6 +33,12 @@ Table of Contents
     * [6.Size is not grandeur, and territory does not make a nation.](#6-size-is-not-grandeur-and-territory-does-not-make-a-nation-6-sizec)
     * [7.Intel.](#7-intel-100-intel)
     * [8.UNIX is basically a simple operating system, but you have to be a genius to understand the simplicity.](#8-unix-is-basically-a-simple-operating-system-but-you-have-to-be-a-genius-to-understand-the-simplicity-101-quotec)
+
+## Concepts
+For this project, we expect you to look at this concept:
+
+- [Struggling with the sandbox? Try this: Using Docker & WSL on your local host](../concepts/docker_and_wsl.md)
+- [C programming](https://drive.google.com/file/d/1hbIpClULyMJZSWyxy8sXy8lpVVhQlcLr/view?usp=drive_link)
 
 ## Resources
 ### Read or watch:
