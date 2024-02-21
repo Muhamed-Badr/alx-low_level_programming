@@ -39,11 +39,13 @@ short int number_digit(int num)
  */
 void print_number(int n)
 {
-	short int i, digit = number_digit(n), mul_of_10 = 10;
+	short int i, digit = number_digit(n);
+	int mul_of_10 = 10;
+	unsigned int unsigned_n = n;
 
 	if (!number_sign(n))
 	{
-		n *= (-1);
+		unsigned_n *= (-1);
 		_putchar('-');
 	}
 
@@ -52,10 +54,10 @@ void print_number(int n)
 
 	for (i = 1; i < digit; i++)
 	{
-		_putchar((n / mul_of_10) + '0');
-		n %= mul_of_10;
+		_putchar((unsigned_n / mul_of_10) + '0');
+		unsigned_n %= mul_of_10;
 		mul_of_10 /= 10;
 	}
 
-	_putchar(n + '0');
+	_putchar(unsigned_n + '0');
 }
