@@ -267,7 +267,7 @@ In the `main.c` file, on what line is the first error that the compiler returns?
 
 ## Tasks
 ### 0. Multiple mains <sub>([0-main.c](0-main.c))</sub>
-- **Description:** In most projects, we often give you only one main file to test with. For example, this main file is a test for a `postitive_or_negative()` function similar to the one you worked with in [an earlier C project](https://github.com/Muhamed-Badr/alx-low_level_programming/tree/master/0x01-variables_if_else_while#0-positive-anything-is-better-than-negative-nothing-0-positive_or_negativec-):
+- **Description:** In most projects, we often give you only one main file to test with. For example, this main file is a test for a `postitive_or_negative()` function similar to the one you worked with in [an earlier C project](https://github.com/Muhamed-Badr/alx-low_level_programming/tree/master/0x01-variables_if_else_while/README.md#0-positive-anything-is-better-than-negative-nothing-0-positive_or_negativec-):
 
 Example:
 ```shell
@@ -313,7 +313,7 @@ carrie@ubuntu:/debugging$
 
 Based on the `main.c` file above, create a file named `0-main.c`. This file must test that the function `positive_or_negative()` gives the correct output when given a case of `0`.
 
-You are not coding the solution / function, you’re just testing it! However, you can adapt your function from [0x01. C - Variables, if, else, while - Task #0](https://github.com/Muhamed-Badr/alx-low_level_programming/tree/master/0x01-variables_if_else_while#0-positive-anything-is-better-than-negative-nothing-0-positive_or_negativec-) to compile with this main file to test locally.
+You are not coding the solution / function, you’re just testing it! However, you can adapt your function from [0x01. C - Variables, if, else, while - Task #0](https://github.com/Muhamed-Badr/alx-low_level_programming/tree/master/0x01-variables_if_else_while/README.md#0-positive-anything-is-better-than-negative-nothing-0-positive_or_negativec-) to compile with this main file to test locally.
 
 - You only need to upload `0-main.c` and `main.h` for this task. We will provide our own `positive_or_negative()` function.
 - You are not allowed to add or remove lines of code, you may change only **one** line in this task.
