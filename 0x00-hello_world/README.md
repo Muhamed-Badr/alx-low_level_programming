@@ -11,7 +11,6 @@ Table of Contents
 * [Learning Objectives](#learning-objectives)
     * [General](#general)
 * [Requirements](#requirements)
-* [Requirements](#requirements)
     * [C](#c)
     * [Shell Scripts](#shell-scripts)
 * [More Info](#more-info)
