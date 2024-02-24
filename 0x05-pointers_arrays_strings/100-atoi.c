@@ -9,10 +9,10 @@
  */
 int _atoi(char *s)
 {
-	int sign = 1, int_num = 0;
+	int sign = 1;
+	unsigned int int_num = 0;
 
-	do
-	{
+	do {
 		if (*s == '-')
 			sign *= (-1);
 		else if (*s >= '0' && *s <= '9')
@@ -26,7 +26,8 @@ int _atoi(char *s)
 	/*
 	 *	2nd sol (not good for performance)
 	 *
-	 *	int num_len, num_start, int_num = 0, sign = 1;
+	 *	int num_len, num_start, sign = 1;
+	 *	unsigned int int_num = 0;
 	 *
 	 *	for (num_len = 0, num_start = 0; s[num_start]; num_start++)
 	 *	{
