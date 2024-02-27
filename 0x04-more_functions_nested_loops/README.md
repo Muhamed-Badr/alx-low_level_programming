@@ -231,7 +231,7 @@ int i;
 
 for (i = 48; i < 58; i++)
 {
-OA    printf("%c", i);
+    printf("%c", i);
 }
 ```
 
@@ -241,7 +241,7 @@ for (i = 48; i < 58; i++)
 
 ## Tasks
 ### 0. isupper <sub>([0-isupper.c](0-isupper.c))</sub>
-OA- **Description:** Write a function that checks for uppercase character.
+- **Description:** Write a function that checks for uppercase character.
     - Prototype: `int _isupper(int c);`
     - Returns `1` if `c` is uppercase
     - Returns `0` otherwise
@@ -259,7 +259,7 @@ julien@ubuntu:~/0x04$ cat 0-main.c
  * Return: Always 0.
  */
 int main(void)
-OA{
+{
     char c;
 
     c = 'A';
@@ -279,7 +279,7 @@ julien@ubuntu:~/0x04$
     - **Directory:** `0x04-more_functions_nested_loops`
     - **File:** `0-isupper.c`
 
-OA### 1. isdigit <sub>([1-isdigit.c](1-isdigit.c))</sub>
+### 1. isdigit <sub>([1-isdigit.c](1-isdigit.c))</sub>
 - **Description:** Write a function that checks for a digit (`0` through `9`).
     - Prototype: `int _isdigit(int c);`
     - Returns `1` if `c` is a digit
@@ -315,7 +315,7 @@ julien@ubuntu:~/0x04$
 ```
  - **Repo:**
     - **GitHub repository:** `alx-low_level_programming`
-OA    - **Directory:** `0x04-more_functions_nested_loops`
+    - **Directory:** `0x04-more_functions_nested_loops`
     - **File:** `1-isdigit.c`
 
 ### 2. Collaboration is multiplication <sub>([2-mul.c](2-mul.c))</sub>
@@ -347,14 +347,14 @@ julien@ubuntu:~/0x04$
 ```
  - **Repo:**
     - **GitHub repository:** `alx-low_level_programming`
-OA    - **Directory:** `0x04-more_functions_nested_loops`
+    - **Directory:** `0x04-more_functions_nested_loops`
     - **File:** `2-mul.c`
-OA
+
 ### 3. The numbers speak for themselves <sub>([3-print_numbers.c](3-print_numbers.c))</sub>
 - **Description:** Write a function that prints the numbers, from `0` to `9`, followed by a new line.
     - Prototype: `void print_numbers(void);`
     - You can only use `_putchar` twice in your code
-OA
+
 Example:
 ```shell
 julien@ubuntu:~/0x04$ cat 3-main.c 
@@ -366,7 +366,7 @@ julien@ubuntu:~/0x04$ cat 3-main.c
  * Return: Always 0.
  */
 int main(void)
-OA{
+{
     print_numbers();
     return (0);
 }
@@ -384,7 +384,7 @@ julien@ubuntu:~/0x04$
 - **Description:** Write a function that prints the numbers, from `0` to `9`, followed by a new line.
     - Prototype: `void print_most_numbers(void);`
     - Do not print `2` and `4`
-OA    - You can only use `_putchar` twice in your code
+    - You can only use `_putchar` twice in your code
 
 Example:
 ```shell
