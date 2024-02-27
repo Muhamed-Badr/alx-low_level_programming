@@ -13,9 +13,9 @@ char *string_toupper(char *s)
 	for (i = 0; s[i]; i++)
 		if (s[i] >= 'a' && s[i] <= 'z')
 		{
-			/* 
-			   -> The difference between lowercase & uppercase characters:
-			   -> ('a' - 'A') = 32
+			/*
+			 * -> The difference between lowercase & uppercase characters:
+			 * -> ('a' - 'A') = 32
 			 */
 			s[i] -= ('a' - 'A');
 		}
