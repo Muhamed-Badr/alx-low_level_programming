@@ -36,21 +36,6 @@ Table of Contents
     * [11.The problem of distinguishing prime numbers from composite numbers and of resolving the latter into their prime factors is known to be one of the most important and useful in arithmetic](#11-The-problem-of-distinguishing-prime-numbers-from-composite-numbers-and-of-resolving-the-latter-into-their-prime-factors-is-known-to-be-one-of-the-most-important-and-useful-in-arithmetic-100-prime_factorc-100-prime_factor_2nd_solc-)
     * [12.Numbers have life; they're not just symbols on paper](#12-Numbers-have-life-theyre-not-just-symbols-on-paper-101-print_numberc-)
 
-    ## Tasks
-0.isupper
-1.isdigit
-2.Collaboration is multiplication
-3.The numbers speak for themselves
-4.I believe in numbers and signs
-5.Numbers constitute the only universal language
-6.The shortest distance between two points is a straight line
-7.I feel like I am diagonally parked in a parallel universe
-8.You are so much sunshine in every square inch
-9.Fizz-Buzz
-10.Triangles
-11.The problem of distinguishing prime numbers from composite numbers and of resolving the latter into their prime factors is known to be one of the most important and useful in arithmetic
-12.Numbers have life; they're not just symbols on paper
-
 ## Concepts
 For this project, we expect you to look at this concept:
 - [Struggling with the sandbox? Try this: Using Docker & WSL on your local host](../concepts/docker_and_wsl.md)
