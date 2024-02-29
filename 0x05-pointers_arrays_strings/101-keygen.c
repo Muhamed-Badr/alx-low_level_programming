@@ -11,7 +11,7 @@
  */
 int main(void)
 {
-	int rand_num, sum = 0;
+	short int rand_num, sum = 0, min = 1, max = 127;
 
 	srand(time(NULL)); /* set the seed of 'rand()' function */
 
@@ -19,9 +19,9 @@ int main(void)
 	while (sum < 2772)
 	{
 		/*
-		 * decimal numbers from 0 to 128 represent all ASCII characters
+		 * decimal numbers from 0 to 127 represent all ASCII characters
 		 */
-		rand_num = rand() % 128;
+		rand_num = min + (rand() % (max - min + 1));
 
 		if ((sum + rand_num) > 2772)
 			break;
@@ -30,7 +30,7 @@ int main(void)
 		sum += rand_num;
 	}
 	_putchar(2772 - sum); /* print the last character */
-	_putchar('\n');
+	/*_putchar('\n');*/
 
 	/* printf("final sum: %d\n", sum + (2772 - sum)); */
 	/*the above printf confirms to you that the final sum will always = 2772*/
