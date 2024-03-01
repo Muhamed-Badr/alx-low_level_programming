@@ -39,8 +39,8 @@ short int num_digit(int num)
  */
 void print_number(int n)
 {
-	int digit = num_digit(n);
-	short int mul_of_10 = 1;
+	short int digit = num_digit(n);
+	int mul_of_10 = 1;
 	unsigned int unsigned_n = n;
 
 	if (num_sign(n))
