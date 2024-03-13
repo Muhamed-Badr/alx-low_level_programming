@@ -43,11 +43,10 @@ void print_buffer(char *b, int size)
 				else
 					printf(".");/*prints '.' if it is not printable*/
 			else
-				printf(" ");
+				break;/*printf(" ");*/
 		}
 		printf("\n");
 	}
-
 	if (!i)/* prints new line if 'size' less than or equal 0 */
 		printf("\n");
 }
