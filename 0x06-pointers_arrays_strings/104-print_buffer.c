@@ -27,7 +27,7 @@ void print_buffer(char *b, int size)
 			if (j < size)
 				printf("%02x", b[j]);
 			else
-				printf("  ");
+				printf("  ");/*alignment last line if it is less than 10 characters*/
 		}
 		printf(" ");
 		for (; i < j; i++)/*prints buffer content*/
@@ -43,7 +43,7 @@ void print_buffer(char *b, int size)
 				else
 					printf(".");/*prints '.' if it is not printable*/
 			else
-				break;/*printf(" ");*/
+				break;/*break when 'size' bytes printed*/
 		}
 		printf("\n");
 	}
