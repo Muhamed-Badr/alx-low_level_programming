@@ -10,8 +10,7 @@
  */
 void print_diagsums(int *a, int size)
 {
-	int i, j;
-	long long main_diag_sum = 0, secondary_diag_sum = 0;
+	int i, j, main_diag_sum = 0, secondary_diag_sum = 0;
 
 	i = 0;
 	j = (size - 1);
@@ -25,5 +24,5 @@ void print_diagsums(int *a, int size)
 		j += (size - 1);
 	}
 
-	printf("%lld, %lld\n", main_diag_sum, secondary_diag_sum);
+	printf("%d, %d\n", main_diag_sum, secondary_diag_sum);
 }

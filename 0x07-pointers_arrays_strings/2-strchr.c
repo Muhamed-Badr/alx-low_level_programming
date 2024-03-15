@@ -15,5 +15,13 @@ char *_strchr(char *s, char c)
 	for (i = 0; s[i]; i++)
 		if (s[i] == c)
 			return (s + i);
+	/*
+	 * if c is '\0', you should return
+	 * the pointer to the '\0' of the
+	 * string s
+	 */
+	if (c == '\0')
+		return (s + i);
+
 	return (NULL);
 }
