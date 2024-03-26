@@ -3,3 +3,6 @@
 
 # Ignore specific files
 main.c
+
+# Ignore specific directories
+tmp/
