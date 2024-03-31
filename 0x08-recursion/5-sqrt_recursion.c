@@ -8,7 +8,13 @@
  *
  * Description: for more information about how to get the square root
  *    https://en.m.wikipedia.org/wiki/Methods_of_computing_square_roots
- * i use the Heron's method (add '#Heron's_method' to the end of above URL)
+ * i use the Heron's method (add '#Heron's_method' to the end of above URL),
+ * where this method improve the solution performance a lot
+ * for EX -
+ *  +if i want to get the sqrt(1,000,000);
+ *    -> in the normal solution that iterates from 0 until the square root of
+ *       number, so in case of sqrt(1,000,000); it iterates 1000 times(0-1000)
+ *    -> in the solution that is use Heron's method, it iterates 16 times
  *
  * ->note
  *  each comment starts with (d) it's used for debugging
