@@ -1,30 +1,12 @@
 #include "main.h"
 
 /**
- * find_r_char - match the character 'ch' in 's1' from end
- * @s1: pointer to the string to search in it
- * @ch: The character to match it
- * @ptr: Pointer to substring that starts by the matching char 'ch'
- *
- * Return: pointer to the matched char in 's1'. NULL ('\0') if 'ch' not found
- */
-char *find_r_char(char *s1, char ch, char *ptr)
-{
-	if (*s1 == ch)
-		ptr = s1;
-
-	if (*s1 != '\0') /* search in the whole string 's1'  */
-		return (find_r_char(s1 + 1, ch, ptr));
-
-	if (!ptr) /* return NULL ('\0') if there is no matching */
-		return (s1);
-	return (ptr); /* return 'ptr' if there is a matching found */
-}
-
-/**
  * wildcmp - compares two strings
- * @s1: pointer to the 1st string
- * @s2: pointer to the 2st string
+ * @s1: pointer to the string
+ * @s2: pointer to the pattern
+ *
+ * Description: I've inspired the solution by this article
+ *      www.firmcodes.com/write-c-program-wildcard-pattern-matching-algorithm/
  *
  * note:
  *   -> 's2' can contain the special character '*'
@@ -34,24 +16,36 @@ char *find_r_char(char *s1, char ch, char *ptr)
  */
 int wildcmp(char *s1, char *s2)
 {
-	if (*s2 == '*') /* check if the current character '*s2' == '*' */
-	{
-		if (*(s2 + 1) == '*') /* skip the continuous '*' in s2 */
-			return (wildcmp(s1, s2 + 1));
-		/*
-		 * find the character that is pointed by 's2 + 1' in 's1'
-		 * then make 's1' and 's2' = the substring starts by this character
-		 */
-		else
-			s1 = find_r_char(s1, *++s2, '\0');
-	}
-
-	if (*s1 != *s2)
-		return (0);
-
-	/* return 1 only if 's1' and 's2' reach the end without any difference */
-	if (*s1 == '\0' && *s2 == '\0')
+	/*
+	 * Base case:
+	 * return 1 only if 's1' and 's2' reach the end without any difference
+	 * #-> both 's1' and 's2' are empty, they match [✓]
+	 */
+	if (*s2 == '\0' && *s1 == '\0')
 		return (1);
 
-	return (wildcmp(s1 + 1, s2 + 1));
+	/* skip continuous extra '*' characters */
+	if (*s2 == '*' && *(s2 + 1) == '*')
+		return (wildcmp(s1, s2 + 1));
+
+	/* Check for match */
+	if (*s2 == *s1)
+		return (wildcmp(s1 + 1, s2 + 1));
+
+	/*
+	 * if you want to include the '?' wildcard you can:
+	 * -> replace the previous condition `if (*s2 == *s1)`
+	 *    by this one `if (*s2 == '?' || *s2 == *s1)`
+	 */
+
+	/* Check for zero or more character missing */
+	if (*s2 == '*')
+		return (wildcmp(s1, s2 + 1) || wildcmp(s1 + 1, s2));
+
+	/*
+	 * Base case:
+	 * return 0 if none of the previous conditions are met
+	 * #-> 's1' and 's2' they doesn't match [✗]
+	 */
+	return (0);
 }
