@@ -10,7 +10,7 @@
  *
  * Return: Always 0 (Success)
  */
-int main(int argc, char /*__attribute__((unused))*/ *argv[])
+int main(int argc, char *argv[] /* __attribute__((unused)) */)
 {
 	(void)argv; /* To ignore the compiler warning for unused variables */
 
