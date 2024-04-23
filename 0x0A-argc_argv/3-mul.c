@@ -50,7 +50,7 @@ int _to_int(char *s, int *num)
 {
 	int sign = 1; /* Assume that the number is positive */
 
-	*num = 0;
+	*num = 0; /* Initialize `num` to 0 (reset its value to the default) */
 
 	/* Check for sign character at the beginning */
 	if (*s == '-')
