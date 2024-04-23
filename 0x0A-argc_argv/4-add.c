@@ -9,7 +9,7 @@ int _to_int(char *s, int *num);
  * Description: This program prints the result of adding positive numbers
  *					passed to the program, followed by a new line.
  *
- * Return: 0 on success, 1 otherwise
+ * Return: 0 if the passed arguments(numbers) are valid, 1 otherwise
  */
 int main(int argc, char *argv[])
 {
@@ -36,7 +36,7 @@ int main(int argc, char *argv[])
  * @s: pointer to the passed char number
  * @num: pointer to the converted number
  *
- * Return: 0 on success, 1 otherwise
+ * Return: 0 if the passed number is valid, 1 otherwise
  */
 int _to_int(char *s, int *num)
 {

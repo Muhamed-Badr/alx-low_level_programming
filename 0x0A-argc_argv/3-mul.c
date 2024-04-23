@@ -9,7 +9,8 @@ int _to_int(char *s, int *num);
  * Description: This program prints the result of multiplying two numbers
  *					passed to the program, followed by a new line.
  *
- * Return: Always 0 (Success)
+ * Return: 0 on succes
+ *         1 if the number of arguments passed != 2
  */
 int main(int argc, char *argv[])
 {
@@ -44,7 +45,7 @@ int main(int argc, char *argv[])
  * @s: pointer to the passed char number
  * @num: pointer to the converted number
  *
- * Return: 0 on success, 1 otherwise
+ * Return: 0 if the passed number is valid, 1 otherwise
  */
 int _to_int(char *s, int *num)
 {
