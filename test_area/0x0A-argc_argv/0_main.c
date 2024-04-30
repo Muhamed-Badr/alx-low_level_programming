@@ -1,5 +1,10 @@
 #include <stdio.h>
 
+/**
+ * say_hello - print 'helo, world!'
+ * @x: 1st argument
+ */
+
 void say_hello(int x /*__attribute__((unused))*/)
 {
     int a, b; /* __attribute__((unused)); */
@@ -7,7 +12,7 @@ void say_hello(int x /*__attribute__((unused))*/)
        (void)a;
        (void)x;
      */
-    printf("hello, wrold!\n");
+    printf("hello, world!\n");
 }
 
 int main(int argc, char *argv[]/*, char *envp[], char *t[]*/)
