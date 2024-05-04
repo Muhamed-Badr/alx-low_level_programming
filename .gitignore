@@ -4,5 +4,8 @@
 # Ignore specific files
 main.c
 
+# Ignore valgrind error files
+vgcore*
+
 # Ignore specific directories
 tmp/
