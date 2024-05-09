@@ -20,9 +20,15 @@ char *str_concat(char *s1, char *s2)
 		s2_len = 0;
 	}
 	else if (s1 == NULL)
+	{
 		s2_len = _strlen(s2);
+		s1_len = 0;
+	}
 	else if (s2 == NULL)
+	{
 		s1_len = _strlen(s1);
+		s2_len = 0;
+	}
 	else
 	{
 		s1_len = _strlen(s1);
@@ -34,7 +40,6 @@ char *str_concat(char *s1, char *s2)
 	 *  remember the terminating null('\0') of the string ^_-
 	 */
 	concat_str = malloc(sizeof(*concat_str) * (s1_len + s2_len + 1));
-
 	if (concat_str == NULL)
 		return (NULL);
 
