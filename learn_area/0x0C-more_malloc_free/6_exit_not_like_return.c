@@ -2,7 +2,7 @@
 #include<stdlib.h>
 int try_to_return(void);
 void try_to_exit(void);
-void say_goodbye(void);
+void say_good_luck(void);
 
 int main(void)
 {
@@ -12,11 +12,11 @@ int main(void)
 	 * The `atexit();`:
 	 *        it registers a specific function to be called as the last thing
 	 *        that will be executed before the program termination directly
-	 *     -> in our case, this function is `say_goodbye()`
+	 *     -> in our case, this function is `say_good_luck()`
 	 */
-	if (atexit(say_goodbye) != 0)
+	if (atexit(say_good_luck) != 0)
 	{
-		fprintf(stderr, "Failed to register `say_goodbye()` function\n");
+		fprintf(stderr, "Failed to register `say_good_luck()` function\n");
 		return 1;
 	}
 
@@ -59,9 +59,9 @@ void try_to_exit(void)
 	puts("Hi `try_to_exit()` function\n");
 }
 
-void say_goodbye(void)
+void say_good_luck(void)
 {
-	puts("GoodBye Programmers! :)\n");
+	puts("Good Luck, Programmers! :)\n");
 	return;
 	/* 
 	 * anything after the above line will not be executed
