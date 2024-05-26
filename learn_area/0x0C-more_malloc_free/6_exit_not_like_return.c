@@ -69,5 +69,5 @@ void say_good_luck(void)
 	 * of the whole program
 	 */
 
-	puts("Hi `say_goodbye()` function\n");
+	puts("Hi `say_good_luck()` function\n");
 }
