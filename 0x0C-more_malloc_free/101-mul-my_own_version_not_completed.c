@@ -156,7 +156,7 @@ char *infinite_mul(char *n1, char *n2, char *r, int size_r)
 	 *        SO: `res_len = sum(n1_len, n2_len)`
 	 */
 	/* by assuming that there would not be a carry digit */
-	res_len = n1_len + n2_len - 1 ;
+	res_len = n1_len + n2_len - 1;
 
 	/*check if the size of buffer is enough to hold the add operation result*/
 	if (res_len + 1 > size_r)
@@ -178,9 +178,9 @@ char *infinite_mul(char *n1, char *n2, char *r, int size_r)
 
 		r[i] = (tmp % 10) + '0';
 	}
-	
+
 	r[res_len] = '\0'; /* set the `r` termination null */
-	
+
 	if (tmp / 10) /* check if there is a carry */
 	{
 		/* check if the size of buffer is enough to hold carry digit */
