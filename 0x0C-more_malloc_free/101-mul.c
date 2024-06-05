@@ -19,18 +19,31 @@ int main(int argc, char **argv)
 	short int res_len;
 	char *res;
 
-	if (!(argc == 3 &&\
-				_isdigit_str(argv[1]) == 0 &&\
-				_isdigit_str(argv[2]) == 0))
+	/*
+	 * if (!(argc == 3 &&\
+	 *             _isdigit_str(argv[1]) == 0 &&\
+	 *             _isdigit_str(argv[2]) == 0))
+	 * {
+	 *     puts("Error");
+	 *     exit(98);
+	 * }
+	 */
+	if (argc != 3)
+	{
+		puts("Error");
+		exit(98);
+	}
+
+	if (_isdigit_str(argv[1]) != 0 || _isdigit_str(argv[2]) != 0)
 	{
 		puts("Error");
 		exit(98);
 	}
 
 	/*
-	   result = _mul((argc - 1), (argv + 1));
-	   printf("%s\n", result);
-	   */
+	 * result = _mul((argc - 1), (argv + 1));
+	 * printf("%s\n", result);
+	 */
 
 	res_len = (_strlen(argv[1]) + _strlen(argv[2]) + 1);
 	res = malloc(res_len * sizeof(*res));
@@ -207,9 +220,9 @@ char *infinite_mul(char *n1, char *n2, char *r, int size_r)
 	 * check if the size of buffer is enough to hold the mul operation result
 	 */
 	/*
-	   if (res_len + 1 > size_r)
-	   return (0);
-	   */
+	 * if (res_len + 1 > size_r)
+	 * return (0);
+	 */
 	/*====END_1===========================================================*/
 
 	/* tmp_buf_len = n1_len + n2_len; */
@@ -286,11 +299,10 @@ char *infinite_mul(char *n1, char *n2, char *r, int size_r)
  * that will be passd as `numv`
  */
 /*
-   char *multiple_infinite_mul(int numc, char **numv)
-   {
-   short int num_len, r_len;
-   char *r, tmp_buf;
-
-   }
-   */
+ * char *multiple_infinite_mul(int numc, char **numv)
+ * {
+ *     short int num_len, r_len;
+ *     char *r, tmp_buf;
+ * }
+ */
 
