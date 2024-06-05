@@ -265,6 +265,17 @@ char *infinite_mul(char *n1, char *n2, char *r, int size_r)
 		 */
 	}
 
+	/*
+	 * If the result of `n1 * n2` equal to '0'
+	 *  SO: the content of `r` will be multiple numbers of 0's &
+	 *       the output will be "000000..."
+	 *      where the correct output must be "0"
+	 * For this reason, we below set the termination null('\0')
+	 *  after the 1st '0'
+	 */
+	if (r[0] == '0')
+		r[1] = '\0';
+
 	free(tmp_buf);
 
 	return (r);
