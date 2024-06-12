@@ -4,9 +4,8 @@
  * main - entry point
  *
  * Description: prints the sum of the even-valued terms
- * in the Fibonacci sequence whose values don't exceed 4,000,000
- *
- * Description: For more information visit this
+ *               in the Fibonacci sequence whose values don't exceed 4,000,000
+ *              For more information visit this
  *               website: https://r-knott.surrey.ac.uk/Fibonacci/fibtable.html
  *
  * Return: Always 0 (Success).
