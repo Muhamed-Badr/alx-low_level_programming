@@ -4,7 +4,9 @@
  * main - entry point
  *
  * Description: prints the first 98 Fibonacci numbers,
- * starting with 1 and 2
+ *               starting with 1 and 2,
+ *              For more information visit this
+ *               website: https://r-knott.surrey.ac.uk/Fibonacci/fibtable.html
  *
  * Extra:
  *+the main idea of solving this challenge is how to separate numbers
@@ -55,10 +57,10 @@
  *    the range of each data type OR 'overflow' will happen)
  * 2. used variables shortcuts:
  *    - count -> counter
- *    - cur   -> current
- *    - bef   -> before
+ *    - c     -> current
+ *    - b     -> before
  *    - p     -> part
- *    - fibo  -> fibonacci
+ *    - f     -> fibonacci
  *    - l     -> long
  *    - h     -> half
  *    - d     -> digit
@@ -69,7 +71,7 @@ int main(void)
 {
 	short int count = 0;
 	unsigned long c_f_p1 = 0, c_f_p2 = 0, b_c_f_p1 = 1, b_c_f_p2 = 0,
-		      b_b_c_f_p1 = 0, b_b_c_f_p2 = 0, l_h_d = 1000000000;
+				  b_b_c_f_p1 = 0, b_b_c_f_p2 = 0, l_h_d = 1000000000;
 	while (count < 91)
 	{
 		/*calculate Fibonacci number*/

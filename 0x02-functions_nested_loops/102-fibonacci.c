@@ -6,6 +6,9 @@
  * Description: prints the first 50 Fibonacci numbers,
  * starting with 1 and 2
  *
+ * Description: For more information visit this
+ *               website: https://r-knott.surrey.ac.uk/Fibonacci/fibtable.html
+ *
  * Return: Always 0 (Success).
  */
 int main(void)
