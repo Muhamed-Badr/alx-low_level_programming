@@ -1,7 +1,7 @@
 #include "dog.h"
 
 /**
- * init_dog - Print an instance of a type struct dog
+ * print_dog - Print an instance of a type struct dog
  * @d: A pointer to the struct dog instance to be printed.
  *
  * Return: Nothing.
