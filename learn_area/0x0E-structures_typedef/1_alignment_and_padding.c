@@ -8,6 +8,8 @@ struct pad1
 	char c;
 	int i;
 	/*
+	 * each one cell represent a one Byte
+	 *
 	 *         0 1 2 3 4 5 6 7
 	 * size = |c|-|-|-|i|i|i|i|
 	 */
@@ -19,6 +21,8 @@ struct pad2
 	int i;
 	char c;
 	/*
+	 * each one cell represent a one Byte
+	 *
 	 *         0 1 2 3 4 5 6 7
 	 * size = |i|i|i|i|c|-|-|-|
 	 */
@@ -29,6 +33,8 @@ struct pad3
 	char a, b;
 	int i;
 	/*
+	 * each one cell represent a one Byte
+	 *
 	 *         0 1 2 3 4 5 6 7
 	 * size = |a|b|-|-|i|i|i|i|
 	 */
@@ -39,6 +45,8 @@ struct pad4
 	int i;
 	char a, b;
 	/*
+	 * each one cell represent a one Byte
+	 *
 	 *         0 1 2 3 4 5 6 7
 	 * size = |i|i|i|i|a|b|-|-|
 	 */
@@ -49,6 +57,8 @@ struct pad5
 	char *p, c;
 	int i;
 	/*
+	 * each one cell represent a one Byte
+	 *
 	 *         0 1 2 3 4 5 6 7 8 9 A B C D E F
 	 * size = |p|p|p|p|p|p|p|p|c|-|-|-|i|i|i|i|
 	 */
@@ -59,6 +69,8 @@ struct pad6
 	char *p, c;
 	short int s;
 	/*
+	 * each one cell represent a one Byte
+	 *
 	 *         0 1 2 3 4 5 6 7 8 9 A B C D E F
 	 * size = |p|p|p|p|p|p|p|p|c|-|s|s|-|-|-|-|
 	 */
@@ -69,11 +81,29 @@ struct pad7 /* The same as 'pad6' but its members are different in order */
 	char c, *p;
 	short int s;
 	/*
+	 * each one cell represent a one Byte
+	 *
 	 *         0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1
 	 *         0 1 2 3 4 5 6 7 8 9 A B C D E F 0 1 2 3 4 5 6 7
 	 * size = |c|-|-|-|-|-|-|-|p|p|p|p|p|p|p|p|s|s|-|-|-|-|-|-|
 	 */
 };/* 24 Byte */
+
+struct pad8
+{
+	long l:32;
+	unsigned int u:4;
+	int i:12;
+	short s:8;
+	char c:8;
+	/*
+	 * each one cell represent a one bit
+	 *
+	 *         0 0 . . . 1 1 2 2 2 2 2 2 . . . 2 2 3 3 . . . 3 3 3 3 . . . 3 3
+	 *         0 1 . . . E F 0 1 2 3 4 5 . . . E F 0 1 . . . 6 7 8 9 . . . E F
+	 * size = |l|l|.|.|.|l|l|u|u|u|u|i|i|.|.|.|i|i|s|s|.|.|.|s|s|c|c|.|.|.|c|c|
+	 */
+};/* 8 Byte */
 
 int main(void)
 {
@@ -133,7 +163,10 @@ int main(void)
 	printf("sizeof(struct pad6) {char*; char; short;}: %lu\n", sizeof(struct pad6));
 	puts("\t============");
 
-	printf("sizeof(struct pad6) {char; char*; short;}: %lu\n", sizeof(struct pad7));
+	printf("sizeof(struct pad7) {char; char*; short;}: %lu\n", sizeof(struct pad7));
+	puts("\t============");
+
+	printf("sizeof(struct pad8) {bit-fields}         : %lu\n", sizeof(struct pad8));
 	puts("\t============");
 
 	return (0);
