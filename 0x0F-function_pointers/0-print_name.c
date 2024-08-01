@@ -3,7 +3,7 @@
 /**
  * print_name - Prints a name using callback function.
  * @name: A pointer that holds the name to be printed.
- * @f: A pointer to a function that takes an argument (char*), returns void.
+ * @f: A pointer to a function that takes an argument (char *), returns void.
  *
  * Return: Nothing (void).
  */
