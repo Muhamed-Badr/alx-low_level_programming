@@ -4,7 +4,7 @@
  * free_dog - frees an instance of type struct dog.
  * @d: A pointer to the struct dog instance to be freed.
  *
- * Return: Nothing.
+ * Return: Nothing (void).
  */
 void free_dog(dog_t *d)
 {

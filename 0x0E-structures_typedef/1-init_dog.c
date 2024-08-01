@@ -8,7 +8,7 @@
  * @age: A variable that holds the dog's age.
  * @owner: A pointer to a char array that holds the dog owner's name.
  *
- * Return: Nothing.
+ * Return: Nothing (void).
  */
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
