@@ -14,7 +14,7 @@ int main()
 
 	puts("\t============");
 
-	print_n_str("Hello, ", "Geeks :)\n", "c", "is", "fun", " ^_^\n");
+	print_n_str("Hello, ", "Geeks :)\n", "c", "is", "fun", " ^_^", "\n", NULL);
 
 	puts("\t============");
 
