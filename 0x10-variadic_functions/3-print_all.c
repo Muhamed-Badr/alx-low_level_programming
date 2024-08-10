@@ -22,20 +22,16 @@ void print_all(const char * const format, ...)
 		switch (c)
 		{
 			case 'c':
-				flag = 1;
-				printf("%c", va_arg(ap, int));
+				printf("%c", va_arg(ap, int)), flag = 1;
 				break;
 			case 'i':
-				flag = 1;
-				printf("%d", va_arg(ap, int));
+				printf("%d", va_arg(ap, int)), flag = 1;
 				break;
 			case 'f':
-				flag = 1;
-				printf("%f", va_arg(ap, double));
+				printf("%f", va_arg(ap, double)), flag = 1;
 				break;
 			case 's':
-				flag = 1;
-				str = va_arg(ap, char *);
+				str = va_arg(ap, char *), flag = 1;
 				if (str != NULL)
 				{
 					printf("%s", str);
@@ -43,10 +39,10 @@ void print_all(const char * const format, ...)
 				}
 				printf("(nil)");
 				break;
-		}
-		i++;
+		} i++;
 		if (format[i] != '\0' && flag != 0)
 			printf(", ");
 	}
 	printf("\n");
+	va_end(ap);
 }
