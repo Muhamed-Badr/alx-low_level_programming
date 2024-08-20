@@ -5,7 +5,7 @@
  * @s: pointer to passed string
  *
  * Return: The converted integer.
- * 0 if there is no integer in passed sreing
+ *         0 if there is no integer in passed string.
  */
 int _atoi(char *s)
 {
